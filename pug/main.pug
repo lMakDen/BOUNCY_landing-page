@@ -1,0 +1,152 @@
+doctype html
+html(lang="ru-RU")
+	head
+		title Hello
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="css/main.css")
+	body
+		header
+			.container
+				a(href="#" class="header__logo" id ="header__logo") BOUNCY
+				button(class="header__btn" id="header__btn")
+					img(class="header__btn_img" src="img/menu.svg" alt="")
+				nav(id="nav")
+					for name in ["Hello", "About", "Sevices", "Portfolio", "Team", "Blog", "Contact"]
+						.nav__item
+							a(href="#" class="nav__item__link") #{name}
+					
+							//- start		
+		section(class="start")
+			h1(class="start__title") WE ARE CODE CAFE
+			p(class="start__content") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+
+							//- bouncy
+		section(class="bouncy container")
+			.bouncy__content
+				h2(class="bouncy__content__title topic") THIS IS BOUNCY
+				p(class="bouncy__content__content information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				.btn
+					a(href="#" class="btn__link") Read More
+			.bouncy__img
+				img(src="img/ipad.jpg" alt="error")
+							
+							//- details
+		section(class="details")
+			.container
+				h2(class="sectionName topic") DETAILES ABOUT BOUNCY
+				p(class="sectionContent information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				.details__items-block
+					for number in ["1","2","3"]
+						.details__item
+							img(src="img/details_icon_"+number+".png" alt="error")
+				h3(class="details__idea") Creative ideas
+				.details__content-block
+					p(class="details__first-information")!='Lorem ipsum '+'<span class="details__span">dolor</span> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat.' 
+					p(class="details__second-information information")!='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea '+'<span class="details__span">commodo</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+							//- projects
+		section(class="projects")
+			.container
+				h2(class="sectionName topic") FEATURED PROJECTS
+				p(class="sectionContent information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			.projects__block
+				.projects__first-block
+					.projects__content qualitty
+				.projects__second-block
+					.projects__content qualitty
+				.projects__third-block
+					.projects__content qualitty
+			.projects__footer
+				h4(class="projects__footerName") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				a(href="#" class="projects__footer__buttom") Submit Now
+
+				//- services
+		section(class="services")
+			.container
+				h2(class="sectionName topic") Our services
+				p(class="sectionContent information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+				.services__main
+					.services__items
+						for number in ["1","2","3","4"]
+							.services__item
+								img(src="img/services_"+number+".png" alt="error")
+					.services__content
+						h3(class="services__content__name") Graphic Design
+						p(class="services__content__description") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						p(class="services__content__description") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					.services__img
+						img(src="img/services.jpg" alt="error")
+
+													//- Quotes
+		section(class="quotes")
+			.container(class="flex")
+				.quotes__content
+					h3(class="quotes__content__title") N P R S F D ?
+					p(class="quotes__content__first") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					p(class="quotes__content__second")!='ABDULAH NOMAN <br> CREATIVE DIRECTOR, CODE CAFE'
+				.quotes__device 
+					h4(class="quotes__device__name")!='B<span class="quotes__span">O</span>UNCY'
+
+					//- The Portfolio
+		section(class="ThePortfolio")
+			.container
+				h2(class="sectionName topic") The Portfolio
+				p(class="sectionContent information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat.
+				ul(class="ThePortfolio__ul")
+					for name in ["All works","Print","Identity","Branding","Web","HTML","WordPress"]
+						li(class="ThePortfolio__li")
+							a(href="#" class="ThePortfolio__btn") #{name}
+			.container(class="flex-around")
+				for columnNumber in ["first","second","third","fouth"]
+					.ThePortfolio__Column
+						for photoNumber in ["first","second","third"]
+							div(class="ThePortfolio__"+columnNumber+"Column-"+photoNumber+"Photo")
+								.ThePortfolio__blind
+									h4(class="ThePortfolio__h4") TITLE HERE
+									p(class="ThePortfolio__img-content") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				.ThePortfolio__bottom
+					.ThePortfolio__bottom__mask
+						p(class="ThePortfolio__bottom__content") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						a(class="ThePortfolio__bottom__btn" href="#") Start Project
+
+					//- testimonial
+		section(class="testimonial")
+			.container
+				h2(class="sectionName topic") Testimonials
+				p(class="sectionContent information") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat.
+				.testimonial__block
+					img(class="testimonial__collaborator" src="img/testimonial.png")
+					.testimonial__content
+						p(class="testimonial__content-main")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae velit assumenda incidunt fugiat doloribus tempore illum, libero ipsam non eaque ut quod sint eos vero, quo harum magnam, aliquid consectetur.
+						h4(class="testimonial__content-title")!='<span class="testimonial__span">PARTHO</span><br> FOUNDER, ARTWAYS BD'
+					
+					//- latestNews
+		section(class="latestNews")
+			.latestNews__shadow
+				div(class="container latestNews__container")
+					h2(class="latestNews__blockName") LATEST NEWS
+					p(class="latestNews__blockContent")   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem id magnam corrupti animi, ab impedit dolorem nihil cumque deserunt eos facere, necessitatibus.
+					h3(class="latestNews__topicName") The trending Landing Pages
+					h4(class="latestNews__topicAutor")!='BY <span class="latestNews__span">KABIR UDDIN</span>'
+					p(class="latestNews__content")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro esse, blanditiis impedit molestiae, suscipit quibusdam dicta odit totam ad veniam possimus. Ipsam optio quo quasi sunt suscipit cum debitis recusandae.
+
+					//- footer
+		section(class="footer")
+			h2(class="footer__name") BOUNCY
+			h3(class="footer__content") Copyright 2015 All rights Reserved
+			.footer__links
+				a(href="https://www.facebook.com/" target="_blank" class="footer__facebook__link")
+					i(class="fa fa-facebook" aria-hidden="true")
+				a(href="https://twitter.com" target="_blank" class="footer__twitter__link")
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				a(href="https://linkedin.com" target="_blank" class="footer__linkedin__link")
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				a(href="https://instagram.com" target="_blank" class="footer__instagram__link")
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				a(href="https://vk.com" target="_blank" class="footer__vk__link")
+					<i class="fa fa-vk" aria-hidden="true"></i>
+		script(src="libs/jquery.min.js")
+		<script src="https://use.fontawesome.com/9025ffce3b.js"></script>
+		script(type="text/javascript" src="js/main.js")
