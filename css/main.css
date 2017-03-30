@@ -194,6 +194,7 @@ nav {
     color: #f38134; }
 
 .navMobile {
+  height: 100vh;
   float: none;
   display: block;
   background-color: rgba(0, 0, 0, 0.5); }
@@ -1213,7 +1214,6 @@ nav {
   color: #19bd9a; }
 
 .latestNews {
-  height: 500px;
   background-image: url("../img/latest_news.png"); }
 
 .latestNews__shadow {
@@ -1265,6 +1265,7 @@ nav {
 
 .latestNews__content {
   width: 50%;
+  padding-bottom: 50px;
   font-family: "OpenSans-Regular";
   color: grey;
   font-size: 14px; }

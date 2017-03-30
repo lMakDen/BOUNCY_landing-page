@@ -166,6 +166,7 @@ nav {
   }
 }
 .navMobile{
+  height: 100vh;
   float: none;
   display: block;
   background-color: rgba(0,0,0,0.5);
@@ -709,7 +710,6 @@ nav {
   color: $color;
 }
 .latestNews{
-  height: 500px;
   background-image: url("../img/latest_news.png");
 }
 .latestNews__shadow{
@@ -756,6 +756,7 @@ nav {
 }
 .latestNews__content{
   width: 50%;
+  padding-bottom: 50px;
  @include font_parameters("OpenSans-Regular",  grey, 14px);
  @media only screen and(max-width: 768px){
     width: 75%;
