@@ -55,6 +55,26 @@ a:hover {
   font-style: normal;
   font-weight: normal; }
 
+@media only screen and (max-width: 420px) {
+  .mobileAdaptive {
+    width: 95%; } }
+
+@media only screen and (max-width: 400px) {
+  .mobileAdaptive {
+    width: 90%; } }
+
+@media only screen and (max-width: 380px) {
+  .mobileAdaptive {
+    width: 85%; } }
+
+@media only screen and (max-width: 355px) {
+  .mobileAdaptive {
+    width: 80%; } }
+
+@media only screen and (max-width: 330px) {
+  .mobileAdaptive {
+    width: 75%; } }
+
 .container {
   height: 100%;
   margin-right: auto;
@@ -237,9 +257,6 @@ nav {
     top: 0;
     left: 0;
     z-index: -1; }
-  @media only screen and (max-width: 480px) {
-    .start {
-      width: 500px; } }
 
 .start__title {
   font-family: "Source_Sans_Pro-Light";

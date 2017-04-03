@@ -45,11 +45,30 @@ $color: rgb(25,189,154);
    transform: scaleX(1); 
   }
 }
+.mobileAdaptive{
+  @media only screen and (max-width : 420px){
+    width: 95%;
+  }
+  @media only screen and (max-width : 400px){
+    width: 90%;
+  }
+  @media only screen and (max-width : 380px){
+    width: 85%;
+  }
+  @media only screen and (max-width : 355px){
+    width: 80%;
+  }
+  @media only screen and (max-width : 330px){
+    width: 75%;
+  }
+  
+}
 
 .container{
   height: 100%;
   margin-right: auto;
   margin-left: auto;
+
   @media only screen and(min-width: 992px){
      width: 970px;
    }
@@ -59,10 +78,7 @@ $color: rgb(25,189,154);
   @media only screen and(min-width: 1200px){
      width: 1170px;
    }
-   // @media only screen and(min-width: 480px){
-   //   width: 450px;
-   // }
-     
+        
 }
 .flex{
   display: flex;
@@ -201,9 +217,7 @@ nav {
     left:0;
     z-index: -1;
   }
-  @media only screen and (max-width : 480px){
-    width: 500px;
-  }
+  
 }
 .start__title{
   @include font_parameters("Source_Sans_Pro-Light", white, 35px);
