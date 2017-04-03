@@ -368,7 +368,6 @@ nav {
 }
 .projects__footer{
   width: 100%;
-  height: 115px;
   background-color: $color;
   display: flex;
   justify-content:space-around;
@@ -393,6 +392,7 @@ nav {
   @include font_parameters("OpenSans-Regular", white, 16px);
   @media only screen and(max-width: 768px){
     margin-bottom: 10px;
+
   }
 }
 
@@ -516,7 +516,9 @@ nav {
   @media only screen and(max-width: 768px){
     margin: auto;
     top:10px;
-   }
+    background-position: center;
+
+  }
     
 }
 .quotes__device__name{
